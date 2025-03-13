@@ -5,75 +5,132 @@
     box-sizing: border-box;
 }
 
-/* Basic page setup */
+/* Body setup */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background: #000; /* Solid black background for the whole body */
+    color: #fff; /* Light text for contrast */
     padding: 20px;
 }
 
-/* Header styling */
+/* Banner (Spacey background, logo, and text) */
+.banner {
+    background: url('https://source.unsplash.com/1600x900/?space') center/cover no-repeat, linear-gradient(120deg, rgba(0, 255, 255, 0.4), rgba(0, 0, 0, 0.8)); /* Galactic background */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    border-radius: 12px;
+    position: relative;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px; /* Adjust the logo size */
+    margin-right: 10px;
 }
 
 header .logo h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 24px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    transition: color 0.3s;
 }
 
-/* Section styling */
+nav ul li a:hover {
+    color: #00d4ff; /* Iridescent cyan accent */
+}
+
+/* Styling the intro image and quote */
+.intro-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+blockquote {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #00d4ff; /* Iridescent cyan for the quote */
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Section Styling */
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: #222; /* Slightly lighter black for sections */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    color: #00d4ff; /* Iridescent cyan accent */
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
 }
 
 section p {
-    font-size: 16px;
+    font-size: 18px;
+    color: #d3d3d3;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-/* Button styling */
+/* Button Styling */
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #333;
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #00d4ff;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
 }
